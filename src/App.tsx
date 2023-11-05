@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import { create } from 'kubo-rpc-client'
 
+//Enable from localhost
+//ipfs config show | grep "Access-Control-Allow-Origin"
+//ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://localhost:3000", "http://127.0.0.1:5001"]'
+//ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST", "GET"]'
+
 const client = create({ url: "http://127.0.0.1:5001/api/v0" });
 
 function App() {
