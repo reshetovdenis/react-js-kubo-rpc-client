@@ -8,7 +8,8 @@ import { create } from 'kubo-rpc-client'
 //ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://localhost:3000", "http://127.0.0.1:5001"]'
 //ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST", "GET"]'
 
-const client = create({ url: "http://127.0.0.1:5001/api/v0" });
+const client = create({ url: 'http://ipfs.slonig.org/api/v0' });
+//POST https://ipfs.slonig.org:5001/api/v0/add?stream-channels=true&progress=false net::ERR_SSL_PROTOCOL_ERROR
 
 function App() {
   const [cid, setCid] = useState<string | null>(null);
