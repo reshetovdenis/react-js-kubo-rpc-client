@@ -38,7 +38,7 @@ function App() {
 
   const handleAddButtonClick = async () => {
     try {
-      const response = await client.add('Hello world!');
+      const response = await client.add('Hello world123ldkfsdlfs!');
       setCid(response.cid.toString());  // Convert to string here
       console.log(response.cid);
     } catch (error) {
