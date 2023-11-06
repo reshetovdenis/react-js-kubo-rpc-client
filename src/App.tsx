@@ -5,7 +5,7 @@ import { getIPFSContentID, getIPFSDataFromContentID } from '@slonigiraf/helpers'
 
 const dataToAdd = 'Some data';
 
-const client = create({ url: 'http://ipfs.slonig.org/api/v0' });
+const client = create({ url: 'https://ipfs.slonig.org/api/v0' });
 
 function App() {
   const [cid, setCid] = useState<string | null>(null);
